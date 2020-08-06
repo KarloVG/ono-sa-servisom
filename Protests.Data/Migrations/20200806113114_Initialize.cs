@@ -170,8 +170,8 @@ namespace Protests.Data.Migrations
                 columns: new[] { "Id", "CreatedAt", "DriverId", "LicencePlate" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(2020, 8, 4, 11, 22, 23, 189, DateTimeKind.Local).AddTicks(6222), 1L, "ZG0123BK" },
-                    { 2L, new DateTime(2020, 8, 4, 11, 22, 23, 192, DateTimeKind.Local).AddTicks(4069), 1L, "KA280JA" }
+                    { 1L, new DateTime(2020, 8, 6, 13, 31, 14, 453, DateTimeKind.Local).AddTicks(8700), 1L, "ZG0123BK" },
+                    { 2L, new DateTime(2020, 8, 6, 13, 31, 14, 463, DateTimeKind.Local).AddTicks(8520), 1L, "KA280JA" }
                 });
 
             migrationBuilder.InsertData(
@@ -179,9 +179,9 @@ namespace Protests.Data.Migrations
                 columns: new[] { "Id", "CreatedAt", "FirstName", "LastName" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(832), "Josip", "Josić" },
-                    { 2L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(1834), "Marko", "Marić" },
-                    { 3L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(1867), "Ivan", "Ivan" }
+                    { 1L, new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(8440), "Josip", "Josić" },
+                    { 2L, new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(9490), "Marko", "Marić" },
+                    { 3L, new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(9520), "Ivan", "Ivan" }
                 });
 
             migrationBuilder.InsertData(
@@ -189,8 +189,8 @@ namespace Protests.Data.Migrations
                 columns: new[] { "Id", "CreatedAt", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(9099), "Vulkanizacija", 250.0 },
-                    { 2L, new DateTime(2020, 8, 4, 11, 22, 23, 195, DateTimeKind.Local).AddTicks(536), "Redovni servis", 1200.0 }
+                    { 1L, new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(7690), "Vulkanizacija", 5.0 },
+                    { 2L, new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(8680), "Redovni servis", 5.0 }
                 });
 
             migrationBuilder.InsertData(
@@ -198,8 +198,8 @@ namespace Protests.Data.Migrations
                 columns: new[] { "Id", "CarId", "CreatedAt", "RepairOptionId", "RepairedAt" },
                 values: new object[,]
                 {
-                    { 1L, 1L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(4562), 1L, null },
-                    { 2L, 2L, new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(5649), 2L, null }
+                    { 1L, 1L, new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(3180), 1L, null },
+                    { 2L, 2L, new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(4120), 2L, null }
                 });
 
             migrationBuilder.CreateIndex(

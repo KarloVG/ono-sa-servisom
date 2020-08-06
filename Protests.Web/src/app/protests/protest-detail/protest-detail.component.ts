@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProtestDetailComponent implements OnInit {
 
   protest?: Protest;
-  id: number;
+  id: number = 0;
 
   constructor(
     private activatedRoute: ActivatedRoute,

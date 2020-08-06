@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProtestsModule } from './protests/protests.module';
 import { CitiesModule } from './cities/cities.module';
 import { OrganizersModule } from './organizers/organizers.module';
+import { RepairOptionsModule } from './repair-options/repair-options.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OrganizersModule } from './organizers/organizers.module';
     AppRoutingModule,
     ProtestsModule,
     CitiesModule,
-    OrganizersModule
+    OrganizersModule,
+    RepairOptionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

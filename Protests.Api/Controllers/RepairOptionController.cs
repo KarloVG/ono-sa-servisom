@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Protests.Api.Controllers
 {
-    [Route("api/repairOptions")]
+    [Route("api/repair_options")]
     public class RepairOptionController : BaseController
     {
 
@@ -29,6 +29,13 @@ namespace Protests.Api.Controllers
         public ActionResult<IEnumerable<RepairOption>> GetAll([FromQuery] string search)
         {
             var repairOptions = this.repairOptionRepository.GetAll(search);
+            return Ok(repairOptions);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<IEnumerable<RepairOption>> GetOne(long id)
+        {
+            var repairOptions = this.repairOptionRepository.GetOne(id);
             return Ok(repairOptions);
         }
 

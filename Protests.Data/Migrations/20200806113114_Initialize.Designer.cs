@@ -10,7 +10,7 @@ using Protests.Data.Database;
 namespace Protests.Data.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200804092223_Initialize")]
+    [Migration("20200806113114_Initialize")]
     partial class Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,14 +46,14 @@ namespace Protests.Data.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 189, DateTimeKind.Local).AddTicks(6222),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 453, DateTimeKind.Local).AddTicks(8700),
                             DriverId = 1L,
                             LicencePlate = "ZG0123BK"
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 192, DateTimeKind.Local).AddTicks(4069),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 463, DateTimeKind.Local).AddTicks(8520),
                             DriverId = 1L,
                             LicencePlate = "KA280JA"
                         });
@@ -85,21 +85,21 @@ namespace Protests.Data.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(832),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(8440),
                             FirstName = "Josip",
                             LastName = "Josić"
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(1834),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(9490),
                             FirstName = "Marko",
                             LastName = "Marić"
                         },
                         new
                         {
                             Id = 3L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(1867),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 465, DateTimeKind.Local).AddTicks(9520),
                             FirstName = "Ivan",
                             LastName = "Ivan"
                         });
@@ -270,14 +270,14 @@ namespace Protests.Data.Migrations
                         {
                             Id = 1L,
                             CarId = 1L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(4562),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(3180),
                             RepairOptionId = 1L
                         },
                         new
                         {
                             Id = 2L,
                             CarId = 2L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(5649),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(4120),
                             RepairOptionId = 2L
                         });
                 });
@@ -307,16 +307,16 @@ namespace Protests.Data.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 194, DateTimeKind.Local).AddTicks(9099),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(7690),
                             Name = "Vulkanizacija",
-                            Price = 250.0
+                            Price = 5.0
                         },
                         new
                         {
                             Id = 2L,
-                            CreatedAt = new DateTime(2020, 8, 4, 11, 22, 23, 195, DateTimeKind.Local).AddTicks(536),
+                            CreatedAt = new DateTime(2020, 8, 6, 13, 31, 14, 466, DateTimeKind.Local).AddTicks(8680),
                             Name = "Redovni servis",
-                            Price = 1200.0
+                            Price = 5.0
                         });
                 });
 
