@@ -11,9 +11,9 @@ namespace Protests.Core.Repositories.Protests
 {
     public class CityRepository : ICityRepository
     {
-        private readonly ProtestsContext context;
+        private readonly ApplicationContext context;
 
-        public CityRepository(ProtestsContext context) => this.context = context;
+        public CityRepository(ApplicationContext context) => this.context = context;
 
         public City Create(City entity)
         {

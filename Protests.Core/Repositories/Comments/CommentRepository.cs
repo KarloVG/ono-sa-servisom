@@ -8,9 +8,9 @@ namespace Protests.Core.Repositories.Comments
 {
     public class CommentRepository : ICommentRepository
     {
-        private readonly ProtestsContext context;
+        private readonly ApplicationContext context;
 
-        public CommentRepository(ProtestsContext context) => this.context = context;
+        public CommentRepository(ApplicationContext context) => this.context = context;
 
         public Comment Create(Comment entity)
         {

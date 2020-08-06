@@ -20,6 +20,8 @@ namespace Protests.Data.Entities
 
         public long CityId { get; set; }
         public City City { get; set; }
+        public Organizer Organizer { get; set; }
+        public long OrganizerId { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
     }

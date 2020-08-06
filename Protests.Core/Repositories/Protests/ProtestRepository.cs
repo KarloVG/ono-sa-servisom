@@ -10,9 +10,9 @@ namespace Protests.Core.Repositories.Protests
 {
     public class ProtestRepository : IProtestRepository
     {
-        private readonly ProtestsContext context;
+        private readonly ApplicationContext context;
 
-        public ProtestRepository(ProtestsContext context) => this.context = context;
+        public ProtestRepository(ApplicationContext context) => this.context = context;
 
         public Protest Create(Protest entity)
         {

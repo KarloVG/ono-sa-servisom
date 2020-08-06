@@ -10,7 +10,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protests.Api", "Protests.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protests.Core", "Protests.Core\Protests.Core.csproj", "{64458371-620C-4B43-B046-84A05E3226F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Protests.Data", "Protests.Data\Protests.Data.csproj", "{4CD65119-38E0-4956-A7C2-0EB96D872EB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Protests.Data", "Protests.Data\Protests.Data.csproj", "{4CD65119-38E0-4956-A7C2-0EB96D872EB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CCDA4A0F-7F10-430C-AA35-8FFAFAA266EA}"
+	ProjectSection(SolutionItems) = preProject
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Protests.Web", "Protests.Web\", "{4D5750DF-DFE6-4CEE-A123-CCFE96C3805F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59015"
+		Debug.AspNetCompiler.PhysicalPath = "Protests.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59015\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59015"
+		Release.AspNetCompiler.PhysicalPath = "Protests.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59015\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59015"
+		SlnRelativePath = "Protests.Web\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +56,10 @@ Global
 		{4CD65119-38E0-4956-A7C2-0EB96D872EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD65119-38E0-4956-A7C2-0EB96D872EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD65119-38E0-4956-A7C2-0EB96D872EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D5750DF-DFE6-4CEE-A123-CCFE96C3805F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5750DF-DFE6-4CEE-A123-CCFE96C3805F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5750DF-DFE6-4CEE-A123-CCFE96C3805F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5750DF-DFE6-4CEE-A123-CCFE96C3805F}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

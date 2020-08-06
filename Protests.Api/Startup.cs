@@ -36,16 +36,16 @@ namespace Protests.Api
                     options.SerializerSettings.ReferenceLoopHandling =
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
-
+            services.RegisterScopedServices();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             /* database connection, used from appsettings */
-            services.AddDbContext<ProtestsContext>(options =>
+            services.AddDbContext<ApplicationContext>(options =>
                 //options.UseSqlServer(Configuration["ConnectionStrings:Default"], x => x.MigrationsAssembly("Protests.Data"))
                 options.UseSqlServer(Configuration["ConnectionStrings:Default"])
             );
 
-            services.RegisterScopedServices();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
