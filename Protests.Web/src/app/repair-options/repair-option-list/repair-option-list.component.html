@@ -1,5 +1,15 @@
-<ul>
-    <li *ngFor="let repair of repairOptions">
-        {{ repair.id }} - {{ repair.name }}
-    </li>
-</ul>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-6 col-md-4 item mt-3 text-center" *ngFor="let repair of repairOptions">
+      <a [routerLink]="['/repair-options/', repair.id]" routerLinkActive="active">
+        <img class="img-fluid" src="https://picsum.photos/200/300" />
+      </a>
+      <h3 class="title font-weight-bold text-capitalize mt-3">{{ repair.name }}</h3>
+      <a [routerLink]="['/repair-options/', repair.id]"
+         routerLinkActive="active"
+         class="action text-center mt-3 d-block">
+        <i class="fa fa-arrow-circle-right">Kliknite za više detalja</i>
+      </a>
+    </div>
+  </div>
+</div>
