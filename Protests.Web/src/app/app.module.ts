@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { CitiesModule } from './cities/cities.module';
 import { OrganizersModule } from './organizers/organizers.module';
 import { RepairOptionsModule } from './repair-options/repair-options.module';
-import { CarsModule } from './cars/cars.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { CarsModule } from './cars/cars.module';
     CitiesModule,
     OrganizersModule,
     RepairOptionsModule,
-    CarsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

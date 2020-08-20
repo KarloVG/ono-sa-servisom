@@ -5,11 +5,11 @@ import { ActivatedRoute } from '@angular/router';
 import { RepairOption } from '../repair-option';
 
 @Component({
-  selector: 'app-repair-option-detail',
-  templateUrl: './repair-option-detail.component.html',
-  styleUrls: ['./repair-option-detail.component.scss']
+  selector: 'app-repair-option-form',
+  templateUrl: './repair-option-form.html',
+  styleUrls: ['./repair-option-form.scss']
 })
-export class RepairOptionDetailComponent implements OnInit {
+export class RepairOptionFormComponent implements OnInit {
 
   repairOption?: RepairOption;
 
@@ -19,18 +19,19 @@ export class RepairOptionDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this.activatedRoute.paramMap.subscribe(params => {
       if(params.has('id')) {
         let id = Number(params.get('id'));
-        this.loadRepairOption(id);    
+        this.loadRepairOption(id);
+        
       }
+
   });
   }
+
   loadRepairOption(id: number) {
     this.repairOptionService.getRepairOption(id).subscribe(result => {
       this.repairOption = result;
     });
   }
-
 }

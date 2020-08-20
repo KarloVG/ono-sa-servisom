@@ -1,0 +1,16 @@
+<div class="col-sm-6 mx-auto">
+  <!--<form (ngSubmit)="onSubmit()">
+    <input type="hidden" name="id" [(ngModel)]="selectedCar">-->
+
+    <div class="col-auto my-2">
+      <label for="car">Car</label>
+      <select class="custom-select mr-sm-2"
+              name="car"
+              [(ngModel)]="selectedCar"
+              id="car">
+        <option *ngFor="let c of cars" [value]="c.id">{{ c.licencePlate }}</option>
+      </select>
+    </div>
+    <!--<button type="submit" class="btn btn-primary">Save</button>
+  </form>-->
+</div>

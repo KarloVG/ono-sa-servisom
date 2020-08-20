@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Protests.Api.Services;
 using Protests.Core.Repositories;
 using Protests.Data;
 
@@ -29,7 +30,14 @@ namespace Protests.Api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Car>> GetAll([FromQuery] string search)
         {
-            var cars = this.carRepository.GetAll(search);
+            var cars = this.carRepository.GetAll(null);
+            return Ok(cars);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<IEnumerable<RepairOption>> GetOne(long id)
+        {
+            var cars = this.carRepository.GetOne(id);
             return Ok(cars);
         }
 

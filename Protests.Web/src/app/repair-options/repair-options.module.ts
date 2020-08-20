@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule} from '@angular/forms';
 
 import { RepairOptionsRoutingModule } from './repair-options-routing.module';
 import { RepairOptionListComponent } from './repair-option-list/repair-option-list.component';
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
 HttpClientModule,
-    RepairOptionsRoutingModule
+    RepairOptionsRoutingModule,
+    FormsModule
   ]
 })
 export class RepairOptionsModule { }
